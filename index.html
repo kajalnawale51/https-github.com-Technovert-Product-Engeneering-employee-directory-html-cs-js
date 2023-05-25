@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Employee Directory</title>
+</head>
+
+<body>
+
+    <div class="top-main-container">
+
+        <nav class="navigation-container">
+            
+            <div class="logo-and-title">
+                <div class="logo">
+                    <img src="./images/saketa-logo.png" alt="Logo">
+                </div>
+
+                <div class="heading-and-slogan">
+                    <p class="heading blue-color font-open-sans">Employee Directory</p>
+                    <p class="slogan font-open-sans">The Ultimate People Directory Experience</p>
+                </div>
+            </div>
+
+            <div class="user-and-logo">
+                <div class="welcome-message font-open-sans">
+                    <p class="welcome-user blue-color">Welcome,&nbsp;</p>
+                    <p> Andrew Philips</p>
+                </div>
+                <div class="user-image"><img src="./images/user-photo.png" alt="user_image"></div>
+            </div>
+        </nav>
+
+        <div class="search-filter-container">
+
+            <filter class="font-open-sans">
+                <div class="left-filter-styles">
+                    <h3>Departments</h3>
+                    <ul id="departments-options">
+                        <div class="options-list-div"><li>IT</li>&nbsp;(<span class="filter-count" id="it"></span>)</div>
+                        <div class="options-list-div"><li>Human Resources</li>&nbsp;(<span class="filter-count" id="hr"></span>)</div>
+                        <div class="options-list-div"><li>MD</li>&nbsp;(<span class="filter-count" id="md"></span>)</div>
+                        <div class="options-list-div"><li>Sales</li>&nbsp;(<span class="filter-count" id="sales"></span>)</div>
+                    </ul>
+                    
+                    <h3>Offices</h3>
+                    <ul id="office-options">
+                        <div class="options-list-div"><li>Seattle</li>&nbsp;(<span class="filter-count" id="seattle"></span>)</div>
+                        <div class="options-list-div"><li>India</li>&nbsp;(<span class="filter-count" id="india"></span>)</div>
+                    </ul>
+
+                    <h3>Job Titles</h3>
+                    <ul id="job-title-options">
+                        <div class="options-list-div"><li>SharePoint Practice Head</li>&nbsp;(<span class="filter-count" id="sharepoint-practice-head"></span>)</div>
+                        <div class="options-list-div"><li>.Net Development Head</li>&nbsp;(<span class="filter-count" id="dot-net-development-head"></span>)</div>
+                        <div class="options-list-div"><li>Recruiting Expert</li>&nbsp;(<span class="filter-count" id="recruiting-expert"></span>)</div>
+                        <div class="options-list-div"><li>BI Developer</li>&nbsp;(<span class="filter-count" id="bi-developer"></span>)</div>
+                        <div class="options-list-div"><li>Business Analyst</li>&nbsp;(<span class="filter-count" id="business-analyst"></span>)</div>
+                        <div class="options-list-div"><li>Full Stack Developer</li>&nbsp;(<span class="filter-count" id="full-stack-developer"></span>)</div>
+                        <li><button class="view-more-btn blue-color">view more</button></li>
+                    </ul>
+                </div>
+            </filter>
+
+            <div class="search-filter-and-emp-detail-display">
+                <div class="search-filter">
+                    <div class="search-buttons" id="search-buttons">
+                        <button class="char-search user-icon-search" id=""><i class="fa-solid fa-user fa-sm" style="color: #ffffff;"></i></button>
+                        <button class="char-search" id="char-a">A</button>
+                        <button class="char-search" id="char-b">B</button>
+                        <button class="char-search" id="char-c">C</button>
+                        <button class="char-search" id="char-d">D</button>
+                        <button class="char-search" id="char-e">E</button>
+                        <button class="char-search" id="char-f">F</button>
+                        <button class="char-search" id="char-g">G</button>
+                        <button class="char-search" id="char-h">H</button>
+                        <button class="char-search" id="char-i">I</button>
+                        <button class="char-search" id="char-j">J</button>
+                        <button class="char-search" id="char-k">K</button>
+                        <button class="char-search" id="char-l">L</button>
+                        <button class="char-search" id="char-m">M</button>
+                        <button class="char-search" id="char-n">N</button>
+                        <button class="char-search" id="char-o">O</button>
+                        <button class="char-search" id="char-p">P</button>
+                        <button class="char-search" id="char-q">Q</button>
+                        <button class="char-search" id="char-r">R</button>
+                        <button class="char-search" id="char-s">S</button>
+                        <button class="char-search" id="char-t">T</button>
+                        <button class="char-search" id="char-u">U</button>
+                        <button class="char-search" id="char-v">V</button>
+                        <button class="char-search" id="char-w">W</button>
+                        <button class="char-search" id="char-x">X</button>
+                        <button class="char-search" id="char-y">Y</button>
+                        <button class="char-search" id="char-z">Z</button>
+                    </div>
+
+                    <div class="manual-search-filter">
+                        <div class="search-by-keyword-and-filter-by-dropdown">
+                            <div class="search-employee font-open-sans">
+                                <label class="search-label">Search</label>
+                                <div class="search-bar">
+                                    <i class="fa-solid  searchbar-icon  fa-magnifying-glass fa-sm"
+                                        style="color: #C2C2C2;"></i>
+                                    <input type="text" class="input-type-text" id="search-input-text" placeholder="Enter any keyword">
+                                </div>
+                                <button class="clear-btn" id="clear-btn">Clear</button>
+                            </div>
+                            <div>
+                                <label class="font-open-sans">Filter by</label>
+                                <select class="search-filter-list" id="filter-by">
+                                    <option value="preferredName" class="font-open-sans">Preferred Name</option>
+                                    <option value="department" class="font-open-sans">Department</option>
+                                    <option value="jobTitle" class="font-open-sans">Job Title</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="add-employee-btn" id="add-employee">Add Employee</button>
+                        </div>
+                    </div>
+                    <div class="search-filter-note font-open-sans">
+                        <p><b>Note:&nbsp;</b>Please use the advanced filter options to refine your results</p>
+                    </div>
+                </div>
+
+                <!-- Display Employee Card -->
+                <div class="emp-details-display-container" id="emp-details-display-container">
+                    <!-- <div class="user-info-card" id="#user-info-card">
+                        <div class="user-photo">
+                            <img src="./images/emp-photo.png" alt="emp-photo">
+                        </div>
+                        <div class="emp-details">
+                            <span><b><label class="emp-name font-open-sans">Anthony Morris</label></b></span>
+                            <div class="emp-designation-and-dept">
+                                <p class="emp-designation font-open-sans">SharePoint Practice Head</p>
+                                <p class="emp-department font-open-sans">IT Department</p>
+                            </div>
+                            <div class="emp-details-icons">
+                                <i class="fa-solid fa-square-phone fa-lg" style="color: #969595;"></i>
+                                <i class="fa-solid fa-square-envelope fa-lg" style="color: #969595;"></i>
+                                <i class="fa-solid fa-comment fa-lg" style="color: #969595;"></i>
+                                <i class="fa-solid fa-star fa-lg" style="color: #969595;"></i>
+                                <i class="fa-solid fa-heart fa-lg" style="color: #969595;"></i>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Employee Form -->
+    <div class="popup" id="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <div class="add-emp-heading-and-cols">
+                <h2>Add Employee</h2>
+
+                <div class="add-emp-div">
+                    
+                    <div class="form-element">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Enter first name" class="formFields" onkeyup="authenticateFirstName()">
+                        <span id="error-msg-for-first-name"></span>
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Enter last name" class="formFields" onkeyup="authenticateLastName()">
+                        <span id="error-msg-for-last-name"></span>
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter email" class="formFields" onkeyup="authenticateEmail()">
+                        <span id="error-msg-for-email"></span>
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="job-title">Job Title</label>
+                        <input type="text" id="job-title" placeholder="Enter job title" class="formFields" onkeyup="authenticateJobTitle()">
+                        <!-- <select id="job-title" class="formFields">
+                            <option value="sharePointPracticeHead">SharePoint Practice Head</option>
+                            <option value=".netDevelopmentLead">.Net Development Lead</option>
+                            <option value="recruitingExpert">Recruiting Expert</option>
+                            <option value="biDeveloper">Bi Developer</option>
+                            <option value="businessAnalyst">Business Analyst</option>
+                            <option value="traineeSoftwareDeveloper" selected>Trainee Software Developer</option>
+                        </select> -->
+                        <span id="error-msg-for-job-title"></span>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="office">Office</label>
+                        <input type="text" id="office" placeholder="Enter office" class="formFields" onkeyup="authenticateOffice()">
+                        <span id="error-msg-for-office"></span>
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="department">Department</label>
+                        <input type="text" id="department" placeholder="Enter department" class="formFields" onkeyup="authenticateDepartment()">
+                        <span id="error-msg-for-department"></span>
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="ph-number">Phone Number</label>
+                        <input type="text" id="ph-number" placeholder="Enter phone number" class="formFields" onkeyup="authenticatePhone()">
+                        <span id="error-msg-for-ph-number"></span>
+                    </div>
+                    
+                    <div class="form-element">
+                        <label for="skype-id">Skype Id</label>
+                        <input type="text" id="skype-id" placeholder="Enter skype id" class="formFields" onkeyup="authenticateSkypeId()">
+                        <span id="error-msg-for-skype-id"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-element buttons">
+                <button id="Add">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Employee Form -->
+    <div class="edit-emp-popup" id="edit-emp-popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <div class="edit-emp-heading-and-cols">
+                <h2>Edit Employee Details</h2>
+
+                <div class="edit-emp-div">
+                    
+                    <div class="form-element">
+                        <label for="first-name-edit">First Name</label>
+                        <input type="text" id="first-name-edit" placeholder="Enter first name" class="formFields" onkeyup="authenticateFirstName()">
+                        <span id="error-msg-for-first-name"></span>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="last-name-edit">Last Name</label>
+                        <input type="text" id="last-name-edit" placeholder="Enter last name" class="formFields" onkeyup="authenticateLastName()">
+                        <span id="error-msg-for-last-name"></span>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="email-edit">Email</label>
+                        <input type="text" id="email-edit" placeholder="Enter email" class="formFields" onkeyup="authenticateEmail()">
+                        <span id="error-msg-for-email"></span>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="job-title-edit">Job Title</label>
+                        <input type="text" id="job-title-edit" placeholder="Enter job title" class="formFields" onkeyup="authenticateJobTitle()">
+                        <span id="error-msg-for-job-title"></span>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="office-edit">Office</label>
+                        <input type="text" id="office-edit" placeholder="Enter office" class="formFields" onkeyup="authenticateOffice()">
+                        <span id="error-msg-for-office"></span>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="department-edit">Department</label>
+                        <input type="text" id="department-edit" placeholder="Enter department" class="formFields" onkeyup="authenticateDepartment()">
+                        <span id="error-msg-for-department"></span>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="ph-number-edit">Phone Number</label>
+                        <input type="text" id="ph-number-edit" placeholder="Enter phone number" class="formFields" onkeyup="authenticatePhone()">
+                        <span id="error-msg-for-ph-number"></span>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="skype-id-edit">Skype Id</label>
+                        <input type="text" id="skype-id-edit" placeholder="Enter skype id" class="formFields" onkeyup="authenticateSkypeId()">
+                        <span id="error-msg-for-skype-id"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-element buttons">
+                <button id="onChangeEmpBtn">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirm-delete-popup-container" id="confirm-delete-popup-container">
+        <div class="confirm-delete-popup" id="confirm-delete-popup">
+            <p class="confirm-delete">Are you sure you want to delete?</p>
+            <div class="delete-popup-buttons">
+                <button type="button" id="delete-popup-btn" class="delete-btn">Delete</button>
+                <button type="button" id="cancel-delete-popup-btn" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./employee.js"></script>
+
+</body>
+
+
+</html>

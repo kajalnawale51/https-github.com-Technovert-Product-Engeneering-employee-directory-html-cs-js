@@ -1,0 +1,528 @@
+.top-main-container {
+    display: flex;
+    flex-direction: column;
+    height: 672px;
+    margin: 32px;
+    margin-top: 0px;
+}
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+.logo-and-title {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.logo {
+    float: left;
+    margin-right: 22px;
+}
+.logo img {
+    width: 160px;
+}
+.heading-and-slogan {
+    display: flex;
+    flex-direction: column;
+
+}
+.welcome-message {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    padding-right: 10px;
+}
+.welcome-message p {
+    margin: 0px;
+}
+.blue-color {
+    color: rgba(39, 187, 252, 255);
+}
+.font-open-sans {
+    font-family: 'Open Sans', 'Sans Serif';
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0px;
+}
+.slogan {
+    margin: 0px;
+}
+.user-and-logo {
+    display: flex;
+    align-self: flex-end;
+    align-items: baseline;
+
+}
+.user-image {
+    padding-right: 5px;
+}
+.user-image img {
+    width: 60px;
+}
+.search-filter-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.options-list-div {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+
+}
+.filter-count {
+    font-size: 13px;
+}
+filter {
+    width: 20%;
+
+}
+.left-filter-styles h3 {
+    margin: 0px;
+    font-size: 16px;
+}
+.left-filter-styles ul {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.left-filter-styles ul li {
+    margin-left: 5px;
+    list-style-type: none;
+    font-size: 13px;
+    padding-bottom: 5px;
+    font-weight: 4000;
+    cursor: pointer;
+
+}
+.view-more-btn {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    padding: 0;
+
+}
+.list-decor li {
+    margin: 0px;
+}
+.search-filter-and-emp-detail-display {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.search-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.search-buttons button {
+    background-color: rgba(0, 177, 252, 255);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    height: 6vh;
+    width: 2.8vw;
+    margin-left: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.manual-search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.search-bar {
+    border: 1px solid#C2C2C2;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: center;
+
+}
+.search-by-keyword-and-filter-by-dropdown {
+    display: flex;
+    align-items: center;
+
+}
+.search-employee {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+.add-employee-btn {
+    background-color: rgba(0, 177, 252, 255);
+    border: none;
+    color: white;
+    font-size: 1em;
+    height: 35px;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.add .search-label {
+    font-size: 16px;
+    padding-right: 14px;
+}
+.search-employee .search-label {
+    margin-right: 10px;
+}
+.input-type-text {
+    height: 30px;
+    width: 200px;
+    border: none;
+    margin-left: 10px;
+    margin-right: 20px;
+    outline: none;
+}
+.clear-btn {
+    background-color: rgba(105, 186, 0, 255);
+    color: white;
+    border: none;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 35px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.search-filter-list {
+    height: 35px;
+    width: 200px;
+    border: 1px solid rgb(190, 190, 190);
+    margin-left: 8px;
+    margin-right: 20px;
+    padding-left: 10px;
+    color: rgb(126, 121, 117);
+    outline: none;
+
+}
+.search-filter-note {
+    margin-top: 15px;
+    padding-top: 0px;
+    font-size: 12px;
+}
+
+.emp-details-display-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    border: 2px solid rgb(220, 220, 220);
+    height: 435px;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    
+}
+
+.user-info-card {
+    display: flex;
+    background-color: rgba(233, 232, 232, 255);
+    height: 120px;
+    width: 350px;
+    padding: 8px;
+    margin: 10px;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.user-photo {
+    margin: 5px;
+}
+
+.user-photo img {
+    height: 100%;
+}
+
+.emp-name {
+    font-size: 1em;
+}
+
+.emp-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.emp-designation-and-dept {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.emp-desgnation {
+    font-size: 10px;
+}
+.emp-details p {
+    margin: 0px;
+}
+.emp-details-icons {
+    margin-top: 3px;
+}
+.emp-details-icons i {
+    padding-right: 5px;
+
+}
+.emp-details-icons .fa-lg {
+    font-size: 1em;
+}
+
+/* Add Employee CSS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Raleway", sans-serif;
+    height: 100vh;
+}
+.popup {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 350px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s;
+}
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.add-emp-heading-and-cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.popup .form h2 {
+    align-self: center;
+    text-align: center;
+    color: rgba(39, 187, 252, 255);
+    border: 1px solid rgba(39, 187, 252, 255);
+    border-radius: 10px;
+    padding: 5px;
+    width: 60%;
+    margin: 5px 0px 5px;
+    font-size: 20px;
+}
+.popup .form .form-element {
+    margin: 8px 0px;
+}
+.popup .form .form-element label {
+    font-size: 14px;
+    color: #222;
+}
+.popup .form .form-element input[type="text"] {
+    margin-top: 2px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.popup .form .form-element button {
+    width: 40%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(39, 187, 252, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.edit-icon {
+    font-size: 12px;
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    cursor: pointer;
+}
+.delete-icon {
+    font-size: 12px;
+    position: absolute;
+    right: 6px;
+    bottom: 15px;
+    cursor: pointer;
+}
+#error-msg-for-first-name-validation,
+#error-msg-for-last-name-validation,
+#error-msg-for-email-validation,
+#error-msg-for-job-title-validation,
+#error-msg-for-office-validation,
+#error-msg-for-department-validation,
+#error-msg-for-ph-number-validation,
+#error-msg-for-skype-id-validation {
+    color: red;
+    font-size: 10px;
+}
+
+/* Edit Employeee Popup */
+
+.edit-emp-popup {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 350px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.edit-emp-popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s;
+}
+.edit-emp-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.edit-emp-heading-and-cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.edit-emp-popup .form h2 {
+    align-self: center;
+    text-align: center;
+    color: rgba(39, 187, 252, 255);
+    border: 1px solid rgba(39, 187, 252, 255);
+    border-radius: 10px;
+    padding: 5px;
+    width: 60%;
+    margin: 5px 0px 5px;
+    font-size: 20px;
+}
+.edit-emp-popup .form .form-element {
+    margin: 8px 0px;
+}
+.edit-emp-popup .form .form-element label {
+    font-size: 14px;
+    color: #222;
+}
+.edit-emp-popup .form .form-element input[type="text"] {
+    margin-top: 2px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.edit-emp-popup .form .form-element button {
+    width: 40%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(39, 187, 252, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.confirm-delete-popup-container {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 500px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 30px;
+    transition: 0.5s;
+}
+.confirm-delete-popup-container.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s;
+}
+.confirm-delete-popup-container .confirm-delete-popup p {
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+}
+.delete-popup-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.delete-popup-buttons button {
+    margin-top: 10px;
+    width: 40%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(39, 187, 252, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
